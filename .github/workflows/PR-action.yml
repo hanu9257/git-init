@@ -1,0 +1,10 @@
+name: PR action
+run-name: PR 확인중
+on: 
+  pull_request:
+    types: [opened] # 타입이 있는 Event도 있음 
+jobs: 
+  Check-commit-history: 
+        runs-on: ubuntu-latest
+        steps:
+          - run: git log --graph
