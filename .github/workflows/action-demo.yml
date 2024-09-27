@@ -18,9 +18,6 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
   Second-Job:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "This is second job" 
-      - uses: ./.github/workflows/reusable-action.yml
-        with: 
-          user-name: Junepil Lee
+    uses: ./.github/workflows/reusable-action.yml
+    with: 
+      user-name: Junepil Lee
