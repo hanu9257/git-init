@@ -7,4 +7,5 @@ jobs:
   Check-commit-history: 
         runs-on: ubuntu-latest
         steps:
-          - run: git log --graph
+          - run: pwd
+          - run: ls
